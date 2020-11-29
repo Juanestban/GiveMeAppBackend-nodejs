@@ -1,0 +1,54 @@
+###
+GET http://localhost:4000/api/users
+
+###
+POST http://localhost:4000/api/users/
+Content-Type: application/json
+
+{
+    "username": "Ryan Raynols",
+    "nickname": "ElTestes",
+    "password": "123"
+}
+
+###
+PUT http://localhost:4000/api/users/
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYzNhZWYyY2FlNGM4NDQwNGRhNzM1NyIsImlhdCI6MTYwNjY1OTgyNiwiZXhwIjoxNjA5MjUxODI2fQ.btTBjUkkQSgjFoFw2rb5PCRlZJ7od3eJg51mQ14ng9U
+
+{
+    "username": "Ryan Raynols updated V10",
+    "nickname": "ElTestesV10",
+    "password": "123567890"
+}
+5fc3aef2cae4c84404da7357
+###
+DELETE http://localhost:4000/api/users/
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmYzNhZWYyY2FlNGM4NDQwNGRhNzM1NyIsImlhdCI6MTYwNjY1OTgyNiwiZXhwIjoxNjA5MjUxODI2fQ.btTBjUkkQSgjFoFw2rb5PCRlZJ7od3eJg51mQ14ng9U
+
+###
+POST http://localhost:4000/api/users/signin
+Content-Type: application/json
+
+{
+    "nickname": "ElTestesV6",
+    "password": "lalalalala"
+}
+
+//lalalalala
+
+###
+POST http://localhost:4000/api/users/signup
+Content-Type: application/json
+
+{
+    "username": "Ryan Raynols WE HAVE TOKEN'S",
+    "nickname": "ElTestesV8",
+    "password": "lalalalala",
+    "imgProfile": null
+}
+
+###
+GET http://localhost:4000/api/users/me/dashboard
+Content-Type: application/json
+x-access-token: 5fc3e356da3b57197c872dd3
