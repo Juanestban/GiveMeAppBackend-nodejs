@@ -3,6 +3,10 @@ const jwt = require('jsonwebtoken')
 const { secret } = require('../config')
 
 class UsersControllers {
+    constructor() {
+        console.log('initializer project-ControllerUser')
+    }
+
     getUsers = async (req, res) => {
         try {
             const users = await User.find()
