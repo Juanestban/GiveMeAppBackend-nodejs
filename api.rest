@@ -42,9 +42,9 @@ POST http://localhost:4000/api/users/signup
 Content-Type: application/json
 
 {
-    "username": "Ryan Raynols WE HAVE TOKEN'S",
-    "nickname": "ElTestesV8",
-    "password": "lalalalala",
+    "username": "WE HAVE TOKEN'S",
+    "nickname": "ElTestesV10",
+    "password": "jhonattan",
     "imgProfile": null
 }
 
